@@ -15,7 +15,7 @@ function redd(it){
   
   xhr = new XMLHttpRequest
   xhr.open("GET","https://www.reddit.com"+reds[it]+rview[rflt.dataset.filter]+".json?limit=200",true)
-  xhr.send(null)by reddit
+  xhr.send(null)
   xhr.onreadystatechange = function() {
    if (xhr.readyState === xhr.DONE) {
     if(this.status === 200) {
